@@ -36,7 +36,7 @@ button:hover{
 	color:#2d2d2d;
 	text-decoration: none;
 }
-.link_prays:hover{
+.link-prays:hover{
 	color:#dc134c;
 }
 #toTop {
@@ -91,7 +91,10 @@ button:hover{
 	top: 0;
 	left: 0;
 	display: flex;
-	justify-content: flex-end;
+	flex-wrap:wrap;
+
+	flex-flow: column;
+	/*justify-content: center;*/
 	padding: 10px;
 	background-image: url(../img/10.jpg);
 	background-repeat: no-repeat;
@@ -102,14 +105,33 @@ button:hover{
 }
 .blinky_section{
 	display: flex;
+	/*justify-content: center;*/
 	align-items:center;
 	list-style: none;
+	
+	margin-left: 64%;
+	margin-top: 12%;
 }
+.blinky_section2{
+	display: flex;
+	align-items:center;
+	list-style: none;
+	margin:2px;
+	margin-left: 64%;
+}
+.blinky_section1{
+	display: flex;
+	align-items:center;
+	list-style: none;
+	margin-left: 67%;
+}
+
 .blinky_item{
 	padding: 10px 15px;
 	font-size: 20px;
 	margin-left: 5px;
 	border: 2px solid #dc134c;
+	margin: 10px;
 	list-style: none;
 }
 .blinky_item1{
@@ -210,6 +232,45 @@ button:hover{
 .link_contaks:hover{
 	color: #2d2d2d;
 }
+.contaks1{
+	
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: wrap;
+	padding: 10px;
+	background: #fff;
+	color: #dc134c;
+	font-family: Arial;
+	font-size: 16px;
+}
+.contaks_section1{
+	margin-top: 125px;
+	margin-left: 50px;
+	height: 300px;
+	/*display: flex;
+	align-items: center;
+	list-style: none;*/
+}
+.contaks_item1{
+	padding: 3px 15px;
+	font-size: 32px;
+}
+
+
+
+.contaksButton1{
+	cursor: pointer; 
+}
+.link_contaks1{
+	color:#dc134c;
+	text-decoration: none;
+}
+
+.link_contaks1:hover{
+	color: #2d2d2d;
+}
+
 .name{
 	text-align: center;
 }
@@ -387,7 +448,10 @@ button:hover{
 		background-size: 40%;
 	}
 	.item{
-		height: 850px;
+		height: 650px;
+	}
+	.wrap{
+		width: 70%;	
 	}
 }
 
@@ -404,8 +468,21 @@ button:hover{
 	}
 	
 	.blinky{
-		height: 480px;
-		background-image: url(../img/9.jpg);
+		height: 320px;
+		background-image: url(../img/10.jpg);
+		justify-content: center;
+	}
+	.blinky_section{
+	justify-content: center;
+	margin: 0;
+	}
+	.blinky_section1{
+	justify-content: center;
+	margin: 0;
+	}
+	.blinky_section2{
+	justify-content: center;
+	margin: 0;
 	}
 	.item{
 	padding: 10px 15px;
@@ -455,10 +532,22 @@ button:hover{
 	height: 320px;	
 	}
 	.blinky{
-		height: 480px;
+		height: 320px;
 		background-image: url(../img/9.jpg);
+		justify-content: center;
 	}
-	#toTop {
+	.blinky_section{
+	justify-content: center;
+	margin: 0;
+	}
+	.blinky_section1{
+	justify-content: center;
+	margin: 0;
+	}
+	.blinky_section2{
+	justify-content: center;
+	margin: 0;
+	}	#toTop {
    		width: 8%;
     	height: 8;
    		bottom: 12.5%;
@@ -487,7 +576,9 @@ button:hover{
 	}
 }
 @media screen and (min-width:200px) and (max-width:526px) {
+	
 	button{
+	
 	width: 20px;
 	}
 	.wrap{
@@ -506,6 +597,19 @@ button:hover{
 	.blinky{
 		height: 320px;
 		background-image: url(../img/9.jpg);
+		justify-content: center;
+	}
+	.blinky_section{
+	justify-content: center;
+	margin: 0;
+	}
+	.blinky_section1{
+	justify-content: center;
+	margin: 0;
+	}
+	.blinky_section2{
+	justify-content: center;
+	margin: 0;
 	}
 	#toTop {
    		width: 16%;
